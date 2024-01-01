@@ -87,6 +87,10 @@ app.post('/api/orders', async (req, res) => {
   res.status(201).json({ message: 'Order created!', orderId: newOrder.id });
 });
 
+app.get('/health', (req, res) => {
+  res.status(200).send('OK');
+});
+
 app.use((req, res) => {
   if (req.method === 'OPTIONS') {
     return res.sendStatus(200);
