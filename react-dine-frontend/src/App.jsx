@@ -6,7 +6,7 @@ import Cart from './pages/Cart';
 import CheckoutModal from './pages/CheckoutModal';
 import Confirmation from './pages/Confirmation';
 import { CartProvider } from './CartContext';
-import CartBadge from './CartBadge'; // Import the CartBadge component
+import CartBadge from './CartBadge';
 import './App.css';
 
 function App() {
@@ -21,10 +21,10 @@ function App() {
               <li>
                 <Link to="/cart">
                   Cart
-                  <CartBadge /> {/* Add the CartBadge component next to Cart link */}
+                  <CartBadge />
                 </Link>
               </li>
-              {/* Add more navigation links if needed */}
+
             </ul>
           </nav>
 
@@ -35,7 +35,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<CheckoutModal />} />
             <Route path="/confirmation/:orderId" element={<Confirmation />} />
-            {/* Add more routes if needed */}
+
           </Routes>
         </div>
       </Router>
