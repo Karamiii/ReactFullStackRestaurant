@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Set flex-direction to column */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+

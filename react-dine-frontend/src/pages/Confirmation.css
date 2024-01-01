@@ -1,0 +1,53 @@
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: black; /* Full black background */
+    padding-top: 100px; /* Adjust for navbar height */
+    min-height: 100vh;
+  }
+
+  .order-details-box, .customer-details-box {
+    border: 2px solid orange;
+    padding: 30px;
+    max-width: 500px;
+    background-color: rgb(0, 0, 0); /* White background for the boxes */
+    box-shadow: 0 0 20px rgb(248, 128, 59); /* Optional shadow for depth */
+    color: rgb(248, 128, 59); /* Text color in orange */
+  }
+
+  .order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .order-item-image {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .item-info p, .customer-details-box p {
+    color: rgb(248, 128, 59); /* Orange text */
+    font-size: 18px; /* Larger paragraph text */
+  }
+
+  .customer-details-box h1 {
+    color: rgb(248, 128, 59); /* Orange text */
+    font-size: 30px; /* Larger size for main heading */
+
+  }
+
+  .customer-details-box h2 {
+    color: rgb(248, 128, 59); /* Orange text */
+    font-size: 28px; /* Larger size for subheadings */
+  }
+
+
+
+  /* Additional styling as needed */
