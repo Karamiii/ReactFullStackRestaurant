@@ -90,7 +90,7 @@ function CheckoutModal({ items, onClose }) {
         };
 
         // POST request to submit the order
-        const response = await axios.post('http://localhost:5000/api/orders', orderData);
+        const response = await axios.post('http://16.171.2.4:5001/api/orders', orderData);
 
         // Redirect to confirmation page after a delay
         setTimeout(() => {

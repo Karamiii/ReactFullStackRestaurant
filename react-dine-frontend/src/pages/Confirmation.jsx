@@ -17,11 +17,11 @@ function Confirmation() {
     const fetchOrderAndDishes = async () => {
       try {
         // Fetch the specific order based on orderId
-        const orderResponse = await axios.get(`http://localhost:5000/api/orders/${orderId}`);
+        const orderResponse = await axios.get(`http://16.171.2.4:5001/api/orders/${orderId}`);
         setOrder(orderResponse.data);
 
         // Fetch the list of all dishes
-        const dishesResponse = await axios.get('http://localhost:5000/api/dishes');
+        const dishesResponse = await axios.get('http://16.171.2.4:5001/api/dishes');
         setDishes(dishesResponse.data);
       } catch (error) {
         // Log any errors
@@ -64,7 +64,7 @@ function Confirmation() {
             <div key={index} className="order-item">
               {/* Show image and details of each dish */}
               <img
-                src={`http://localhost:5000/${dishDetails?.image}`}
+                src={`http://16.171.2.4:5001/${dishDetails?.image}`}
                 alt={dishDetails?.name}
                 className="order-item-image"
               />

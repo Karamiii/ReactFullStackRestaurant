@@ -48,7 +48,7 @@ function Cart() {
           <div className="cart-items">
             {Object.values(items).map((item) => (
               <div key={item.id} className="cart-item">
-                <img src={`http://localhost:5000/${item.image}`} alt={item.name} />
+                <img src={`http://16.171.2.4:5001/${item.image}`} alt={item.name} />
                 <div className="item-info">
                   <h2>{item.name}</h2>
                   <p>Quantity: {item.quantity}</p>
