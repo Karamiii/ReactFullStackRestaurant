@@ -12,7 +12,11 @@ nav {
   left: 0; /* Add this line to set the left edge to 0 */
   right: 0; /* Add this line to set the right edge to 0 */
   text-align: center;
-  z-index: 1000;
+  z-index: 1;
+}
+
+.home-nav {
+  background-color: transparent; /* Transparent background only on home page */
 }
 nav ul {
   margin: 0;
@@ -23,7 +27,7 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 50px;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 nav a {

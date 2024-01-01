@@ -53,8 +53,10 @@ function Cart() {
                   <h2>{item.name}</h2>
                   <p>Quantity: {item.quantity}</p>
                   <p>Total: ${(item.price * item.quantity).toFixed(2)}</p>
-                  <button onClick={() => handleRemoveClick(item)}>Remove</button>
-                  <button onClick={() => handleAddItem(item)}>Add</button>
+                   <div className="button-container">
+            <button onClick={() => handleRemoveClick(item)} className='RemoveButton'>Remove</button>
+            <button onClick={() => handleAddItem(item)}className='addButton'>Add</button>
+        </div>
                 </div>
               </div>
             ))}

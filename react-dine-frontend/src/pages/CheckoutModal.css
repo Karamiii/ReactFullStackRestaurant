@@ -3,26 +3,28 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
+
   }
 
   .modal {
     background-color: white;
-    padding: 20px;
+    padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
-    width: 80%;
+    width: 100vw;
     max-width: 500px;
+    max-height: 80vh; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
     position: relative;
-    display: none; /* Add this line */
+    display: none;
   }
-
   /* When not loading, display the modal */
 .modal-overlay:not(.loading) .modal {
   display: block; /* This will show the modal when not loading */
@@ -54,7 +56,7 @@
 
   form input, form textarea {
     width: 100%;
-    padding: 8px;
+    padding: 0.5rem;
     margin-top: 5px;
     margin-bottom: 15px;
     border: 1px solid #ddd;
@@ -93,8 +95,8 @@
   /* CheckoutModal.css */
 .spinner {
   border: 8px solid rgba(0, 0, 0, 0.1);
-  width: 60px;
-  height: 60px;
+  width: 3rem;
+  height: 3rem;
   border-radius: 50%;
   border-left-color: rgb(248, 128, 59);
 
@@ -104,6 +106,22 @@
   transform: translate(-50%, -50%);
 
   animation: spin 1s ease-in-out infinite;
+}
+
+@media screen and (max-width: 20em) {
+  .modal {
+    width: 90vw; /* Allow modal to take more width on smaller screens */
+    height: auto; /* Let the height be determined by content */
+    max-height: 90vh; /* Adjust max-height for smaller screens */
+  }
+
+  .modal-overlay {
+    padding: 2vw; /* Reduce padding for small screens */
+  }
+
+  .close-button, form input, form textarea, .total-price, .submit-button, .error-message {
+    font-size: 3vw; /* Increase font size for readability at higher zoom levels */
+  }
 }
 
 @keyframes spin {

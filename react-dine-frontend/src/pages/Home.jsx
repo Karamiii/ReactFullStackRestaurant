@@ -3,6 +3,16 @@ import { useNavigate } from 'react-router-dom';
 import './Home.css'; // Importing CSS for styling
 
 function Home() {
+
+  useEffect(() => {
+    // Add a specific class to the nav element when the Home component mounts
+    document.querySelector('nav').classList.add('home-nav');
+
+    // Remove the class when the component unmounts
+    return () => {
+      document.querySelector('nav').classList.remove('home-nav');
+    };
+  }, [])
   // useRef hook to reference the video element
   const videoRef = useRef();
   // useState hooks for controlling fade to black and displaying content
