@@ -16,7 +16,7 @@ function Menu() {
     const fetchMenuItems = async () => {
       try {
         // Make an HTTP GET request to fetch the menu items
-        const response = await axios.get('http://16.171.2.4:5001/api/dishes');
+        const response = await axios.get('https://reactdine-api.onrender.com/api/dishes');
         // Update the menuItems state with the fetched data
         setMenuItems(response.data);
       } catch (error) {
@@ -49,7 +49,7 @@ function Menu() {
         {menuItems.map((item) => (
           <div key={item.id} className="menu-item">
             {/* Display the item image */}
-            <img src={`http://16.171.2.4:5001/${item.image}`} alt={item.name} />
+            <img src={`https://reactdine-api.onrender.com/${item.image}`} alt={item.name} />
             {/* Display item details */}
             <div className="item-details">
               <h2>{item.name}</h2>
