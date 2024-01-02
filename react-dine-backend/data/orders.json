@@ -1,1 +1,23 @@
-[{"customer":{"name":"Karam Chafqane","email":"karam.chafqane123@hotmail.com","street":"Ajurinkatu 20 A 11","postal-code":"70110","city":"Kuopio"},"items":[{"id":"d3","quantity":1},{"id":"d4","quantity":1},{"id":"d5","quantity":1}],"id":"912f26da-50b9-46da-8a35-e79b7e953b8f"}]
+[
+
+    {
+        "customer": {
+            "name":"Jack Sparrow",
+            "email":"jack.sparrow@example.com",
+            "street":"123 tortuga st",
+            "postal-code":"12345",
+            "city":"Tortuga"
+        },
+        "items": [
+                {
+                    "id":"d3",
+                    "quantity":1
+                },
+                {
+                    "id":"d4",
+                    "quantity":1
+                }
+        ],
+        "id":"419d3f40-abcb-421f-81d0-eade29d23aac"
+    }
+]

@@ -90,7 +90,7 @@ function CheckoutModal({ items, onClose }) {
         };
 
         // POST request to submit the order
-        const response = await axios.post('https://reactdine-api.onrender.com/api/orders', orderData);
+        const response = await axios.post('http://localhost:80/api/orders', orderData);
 
         // Redirect to confirmation page after a delay
         setTimeout(() => {
